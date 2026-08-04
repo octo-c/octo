@@ -68,6 +68,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url('https://www
 .hero-catch{font-family:'Noto Serif JP',serif;font-size:clamp(28px,5vw,54px);font-weight:300;color:rgba(255,255,255,0.95);line-height:1.65;letter-spacing:0.05em;margin-bottom:20px;animation:fadeUp 1s ease both}
 .hero-catch em{font-style:normal;color:var(--gpale);font-weight:400;position:relative;display:inline-block;clip-path:inset(0)}
 .hero-catch-sub{display:inline-block;margin-top:14px;font-size:0.42em;letter-spacing:0.3em;color:rgba(255,255,255,0.7)}
+.hero-copy-line{font-family:'Noto Serif JP',serif;font-size:clamp(14px,1.7vw,18px);font-weight:300;color:rgba(255,255,255,0.85);letter-spacing:0.03em;line-height:2;margin-top:26px}
 .hero-line{display:block;transition:transform 0.3s}
 .hero-line-1{transform:translateX(-30%)}
 .hero-line-2{transform:translateX(0)}
