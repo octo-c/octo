@@ -79,7 +79,7 @@ body::before{content:'';position:fixed;inset:0;background-image:url('https://www
 }
 .hero-catch em::after{content:'';position:absolute;top:0;left:-120%;width:60%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.2),transparent);transform:skewX(-20deg);animation:shimmer 5s 2s infinite}
 @keyframes shimmer{100%{left:140%}}
-.hero-sub{color:rgba(255,255,255,0.58);max-width:600px;margin:0 auto 48px;font-size:13px;letter-spacing:0.08em;animation:fadeUp 1s 0.2s ease both}
+.hero-sub{color:rgba(255,255,255,0.58);max-width:600px;margin:36px auto 48px;font-size:13px;letter-spacing:0.08em;animation:fadeUp 1s 0.2s ease both}
 .hero-btn{display:inline-block;padding:15px 44px;border:1px solid rgba(168,219,188,0.6);color:var(--gpale);text-decoration:none;letter-spacing:0.25em;font-size:12px;font-family:var(--font-sans);position:relative;overflow:hidden;transition:all 0.4s;animation:fadeUp 1s 0.4s ease both}
 .hero-btn:hover{background:rgba(168,219,188,0.12)}
 .hero-btn::before{content:'';position:absolute;inset:0;background:linear-gradient(120deg,transparent,rgba(255,255,255,0.2),transparent);transform:translateX(-120%);transition:0.8s}
