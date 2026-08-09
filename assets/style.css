@@ -675,3 +675,50 @@ footer{background:var(--gdk);padding:40px;display:flex;justify-content:space-bet
     max-height:230px;
   }
 }
+
+
+/* YAGI ILLUSTRATIONS — clean, uncropped assets */
+.yagi-header{overflow:visible !important;}
+.yagi-header-img{overflow:visible !important;}
+.yagi-header-img::before{display:none !important;}
+.yagi-header-img img{
+  width:min(620px,52vw) !important;
+  max-width:620px !important;
+  height:auto !important;
+  max-height:none !important;
+  object-fit:contain !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+  mix-blend-mode:multiply !important;
+  filter:none !important;
+  transform:none !important;
+}
+.yagi-feature-visual{overflow:visible !important; min-height:240px !important;}
+.yagi-feature-visual img,
+.yagi-assurance-visual img,
+.yagi-process-visual img,
+.yagi-sign-img{
+  width:auto !important;
+  height:auto !important;
+  max-width:100% !important;
+  max-height:none !important;
+  object-fit:contain !important;
+  border-radius:0 !important;
+  box-shadow:none !important;
+  mix-blend-mode:multiply !important;
+  filter:none !important;
+}
+.yagi-feature-visual img{max-width:300px !important;}
+.yagi-assurance-visual img{max-width:255px !important;}
+.yagi-process-visual img{max-width:255px !important;}
+.yagi-sign-img{max-width:220px !important; margin:0 auto 18px !important;}
+@media (max-width:900px){
+  .yagi-header-img img{width:min(520px,50vw) !important;}
+}
+@media (max-width:640px){
+  .yagi-header-img img{width:min(500px,100vw) !important;}
+  .yagi-feature-visual img{max-width:280px !important;}
+  .yagi-assurance-visual img{max-width:230px !important;}
+  .yagi-process-visual img{max-width:230px !important;}
+  .yagi-sign-img{max-width:210px !important;}
+}
