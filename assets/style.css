@@ -81,6 +81,8 @@ body::before{content:'';position:fixed;inset:0;background-image:url('https://www
 @keyframes shimmer{100%{left:140%}}
 .hero-sub{color:rgba(255,255,255,0.58);max-width:600px;margin:36px auto 48px;font-size:13px;letter-spacing:0.08em;animation:fadeUp 1s 0.2s ease both}
 .hero-btn{display:inline-block;padding:15px 44px;border:1px solid rgba(168,219,188,0.6);color:var(--gpale);text-decoration:none;letter-spacing:0.25em;font-size:12px;font-family:var(--font-sans);position:relative;overflow:hidden;transition:all 0.4s;animation:fadeUp 1s 0.4s ease both}
+.btn-on-light{border-color:rgba(15,76,58,0.4) !important;color:var(--gd) !important}
+.btn-on-light:hover{background:var(--gd);color:#fff !important}
 .hero-btn:hover{background:rgba(168,219,188,0.12)}
 .hero-btn::before{content:'';position:absolute;inset:0;background:linear-gradient(120deg,transparent,rgba(255,255,255,0.2),transparent);transform:translateX(-120%);transition:0.8s}
 .hero-btn:hover::before{transform:translateX(120%)}
@@ -397,3 +399,17 @@ footer{background:var(--gdk);padding:40px;display:flex;justify-content:space-bet
 .simple-cta{text-align:center;padding:90px 40px}
 .simple-cta .cta-title{font-family:'Noto Serif JP',serif;font-size:clamp(22px,3.2vw,32px);font-weight:300;color:var(--gd);margin-bottom:18px;line-height:1.6}
 .simple-cta .cta-sub{font-size:13.5px;color:var(--tsoft);line-height:2;margin-bottom:32px;max-width:520px;margin-left:auto;margin-right:auto}
+
+/* ---- Yagi (goat mascot) header — service-helpline.html ---- */
+.yagi-header{display:flex;align-items:center;justify-content:center;gap:56px;flex-wrap:wrap;background:linear-gradient(160deg,#fdfbf6 0%,#f3ece0 100%);padding:150px 40px 70px;max-width:1200px;margin:0 auto}
+.yagi-header-text{max-width:480px;text-align:left}
+.yagi-breadcrumb{color:var(--tlight) !important;margin-bottom:20px}
+.yagi-breadcrumb a{color:var(--gd) !important}
+.yagi-eyebrow{font-family:var(--font-sans);font-size:12px;letter-spacing:0.1em;color:#8a6b47;margin-bottom:10px}
+.yagi-title{font-family:'Noto Serif JP',serif;font-size:clamp(32px,4.4vw,50px);font-weight:500;color:#5c4a33;margin-bottom:10px;letter-spacing:0.03em}
+.yagi-tagline{font-family:'Noto Serif JP',serif;font-size:17px;color:#8a9a6b;margin-bottom:20px;letter-spacing:0.05em}
+.yagi-desc{font-size:13.5px;color:var(--tsoft);line-height:2}
+.yagi-header-img{flex:0 0 auto}
+.yagi-header-img img{width:340px;max-width:70vw;height:auto;border-radius:24px;box-shadow:0 24px 60px rgba(90,70,40,0.18)}
+@media (max-width:760px){.yagi-header{padding:130px 24px 50px;text-align:center}.yagi-header-text{text-align:center}}
+.yagi-sign-img{width:180px;max-width:60vw;height:auto;border-radius:18px;box-shadow:0 16px 40px rgba(90,70,40,0.15);margin:0 auto 28px;display:block}
