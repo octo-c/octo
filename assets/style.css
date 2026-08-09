@@ -419,3 +419,78 @@ footer{background:var(--gdk);padding:40px;display:flex;justify-content:space-bet
 .yagi-illust-center{display:block;margin:48px auto}
 .yagi-clear{clear:both}
 @media (max-width:640px){.yagi-illust-right,.yagi-illust-left{float:none;margin:0 auto 24px;display:block}}
+
+/* ---- Yagi visual refinement — service-helpline.html ---- */
+.yagi-header{
+  width:100%;max-width:none;min-height:620px;gap:72px;padding:150px max(40px,5vw) 88px;
+  background:linear-gradient(115deg,#fbfaf5 0%,#f7f1e7 58%,#efe6d8 100%);
+  position:relative;overflow:hidden;
+}
+.yagi-header::before{content:'';position:absolute;width:520px;height:520px;border-radius:50%;right:-150px;top:80px;background:radial-gradient(circle,rgba(168,213,188,.18),transparent 68%);pointer-events:none}
+.yagi-header::after{content:'';position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,rgba(15,76,58,.12),transparent);}
+.yagi-header-text{width:min(500px,46vw);max-width:none;position:relative;z-index:2}
+.yagi-header-img{width:min(560px,48vw);position:relative;z-index:2;display:flex;align-items:flex-end;justify-content:center}
+.yagi-header-img::before{content:'やぎさんに、ちょっと話してみる。';position:absolute;right:6%;top:8%;font-family:var(--font-ja);font-size:12px;letter-spacing:.08em;color:rgba(63,107,71,.6);writing-mode:vertical-rl;z-index:1}
+.yagi-header-img img{width:100%;max-width:560px;height:auto;border-radius:0;box-shadow:none;display:block;mix-blend-mode:multiply;filter:saturate(.94);transform:translateY(10px);}
+.yagi-eyebrow{font-size:11px;letter-spacing:.16em;color:#8a6b47}
+.yagi-title{font-size:clamp(36px,4.5vw,58px);line-height:1.35;color:#52684e;letter-spacing:.04em;margin-bottom:14px}
+.yagi-tagline{font-size:19px;color:#82956a;margin-bottom:22px}
+.yagi-desc{font-size:14px;line-height:2.15;max-width:440px}
+
+.yagi-feature{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(260px,.65fr);gap:56px;align-items:center;margin:24px 0 76px;padding:0 12px}
+.yagi-feature-reverse{grid-template-columns:minmax(260px,.65fr) minmax(0,1.35fr)}
+.yagi-feature-copy{min-width:0}
+.yagi-feature-copy-emphasis{background:rgba(255,255,255,.38);border-left:2px solid rgba(106,154,112,.35);padding:28px 34px;border-radius:0 18px 18px 0}
+.yagi-feature-visual{display:flex;align-items:center;justify-content:center;position:relative;min-height:220px}
+.yagi-feature-visual::after{content:'';position:absolute;width:210px;height:210px;border-radius:50%;background:rgba(168,213,188,.13);z-index:-1}
+.yagi-feature-visual img{width:100%;max-width:330px;border-radius:0;box-shadow:none;mix-blend-mode:multiply;display:block}
+.yagi-feature-visual-question{transform:translateY(4px)}
+.yagi-feature-visual-heart img{max-width:360px}
+
+.yagi-assurance{display:grid;grid-template-columns:300px 1fr;align-items:center;gap:56px;margin:10px 0 52px;padding:24px 36px;background:rgba(255,255,255,.44);border-top:1px solid rgba(15,76,58,.08);border-bottom:1px solid rgba(15,76,58,.08)}
+.yagi-assurance-visual{display:flex;justify-content:center}
+.yagi-assurance-visual img{width:270px;box-shadow:none;border-radius:0;mix-blend-mode:multiply}
+.yagi-assurance-kicker{font-family:var(--font-sans);font-size:10px;letter-spacing:.28em;color:var(--gsoft);margin-bottom:12px}
+.yagi-assurance-title{font-family:var(--font-ja);font-size:clamp(20px,2.5vw,28px);line-height:1.9;color:var(--gd);letter-spacing:.05em}
+
+.yagi-process-layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:54px;align-items:center}
+.yagi-process-layout .process-list{margin-top:0 !important}
+.yagi-process-visual{position:relative;text-align:center;padding:26px 12px 18px;background:rgba(255,255,255,.38);border-radius:24px}
+.yagi-process-visual::before{content:'';position:absolute;inset:12px;border:1px solid rgba(106,154,112,.14);border-radius:18px;pointer-events:none}
+.yagi-process-visual img{width:270px;max-width:100%;border-radius:0;box-shadow:none;mix-blend-mode:multiply;position:relative}
+.yagi-process-visual p{font-family:var(--font-ja);font-size:14px;line-height:1.9;color:#6b7c64;margin-top:4px;position:relative}
+.yagi-process-visual strong{color:var(--gd);font-weight:500}
+
+.yagi-sign-img{width:230px;max-width:70vw;border-radius:0;box-shadow:none;mix-blend-mode:multiply;margin:0 auto 18px}
+.yagi-illust{height:auto}
+
+@media (max-width:900px){
+  .yagi-header{gap:30px;min-height:0;padding:130px 28px 64px}
+  .yagi-header-text{width:48%}
+  .yagi-header-img{width:46%}
+  .yagi-header-img::before{display:none}
+  .yagi-feature,.yagi-feature-reverse{grid-template-columns:1fr 250px;gap:30px}
+  .yagi-assurance{grid-template-columns:240px 1fr;gap:30px;padding:20px 24px}
+  .yagi-process-layout{grid-template-columns:1fr 240px;gap:30px}
+}
+@media (max-width:640px){
+  .yagi-header{display:flex;flex-direction:column;gap:18px;padding:118px 22px 42px;text-align:center}
+  .yagi-header-text{width:100%;max-width:560px;text-align:center}
+  .yagi-header-text .yagi-breadcrumb{margin-bottom:18px}
+  .yagi-header-img{width:100%;max-width:480px;margin-top:-8px}
+  .yagi-header-img img{transform:none}
+  .yagi-title{font-size:clamp(32px,9vw,44px)}
+  .yagi-desc{margin:0 auto;max-width:420px}
+  .yagi-feature,.yagi-feature-reverse{display:flex;flex-direction:column;gap:14px;margin:18px 0 54px;padding:0}
+  .yagi-feature-reverse .yagi-feature-copy{order:1}
+  .yagi-feature-reverse .yagi-feature-visual{order:2}
+  .yagi-feature-copy-emphasis{padding:24px 22px;border-left:0;border-top:2px solid rgba(106,154,112,.35);border-radius:18px}
+  .yagi-feature-visual{min-height:0;margin-top:-4px}
+  .yagi-feature-visual img{max-width:280px}
+  .yagi-assurance{display:flex;flex-direction:column;gap:4px;margin:0 -4px 44px;padding:18px 18px 26px;text-align:center}
+  .yagi-assurance-visual img{width:230px}
+  .yagi-process-layout{display:flex;flex-direction:column;gap:28px}
+  .yagi-process-visual{width:100%;max-width:330px;margin:0 auto}
+  .yagi-process-visual img{width:230px}
+  .yagi-sign-img{width:210px}
+}
