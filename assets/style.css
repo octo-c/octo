@@ -722,3 +722,34 @@ footer{background:var(--gdk);padding:40px;display:flex;justify-content:space-bet
   .yagi-process-visual img{max-width:230px !important;}
   .yagi-sign-img{max-width:210px !important;}
 }
+
+/* YAGI ILLUSTRATION FIX v3 */
+.yagi-header-img{overflow:visible !important;}
+.yagi-header-img img{
+  width:min(560px,48vw) !important;
+  max-width:560px !important;
+  height:auto !important;
+  object-fit:contain !important;
+  transform:none !important;
+}
+.yagi-feature-visual,
+.yagi-feature-visual img,
+.yagi-assurance-visual,
+.yagi-assurance-visual img,
+.yagi-process-visual,
+.yagi-process-visual img,
+.yagi-sign-img{
+  overflow:visible !important;
+  object-fit:contain !important;
+}
+.yagi-feature-visual-heart img{
+  max-width:340px !important;
+  width:100% !important;
+  height:auto !important;
+}
+@media (max-width:760px){
+  .yagi-header-img img{width:min(500px,100vw) !important;max-width:500px !important;}
+}
+@media (max-width:640px){
+  .yagi-feature-visual-heart img{max-width:290px !important;}
+}
