@@ -494,3 +494,184 @@ footer{background:var(--gdk);padding:40px;display:flex;justify-content:space-bet
   .yagi-process-visual img{width:230px}
   .yagi-sign-img{width:210px}
 }
+
+
+/* =========================================================
+   YAGI ROOM — FINAL IMAGE LAYOUT
+   Character images are transparent cutouts, so they sit
+   naturally on the page without boxes, shadows or "sticker" frames.
+   ========================================================= */
+
+.yagi-header{
+  isolation:isolate;
+  align-items:center;
+  justify-content:space-between;
+  gap:clamp(32px,5vw,86px);
+  padding:clamp(128px,12vw,164px) max(32px,6vw) 70px;
+  min-height:620px;
+}
+.yagi-header-text{
+  flex:0 1 500px;
+  width:auto;
+}
+.yagi-header-img{
+  flex:0 1 560px;
+  width:auto;
+  min-width:420px;
+  min-height:430px;
+  display:flex;
+  align-items:flex-end;
+  justify-content:flex-end;
+  position:relative;
+}
+.yagi-header-img::before{
+  content:"";
+  position:absolute;
+  width:420px;
+  height:420px;
+  right:3%;
+  top:6%;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(174,197,153,.20) 0%,rgba(174,197,153,.08) 48%,transparent 72%);
+  z-index:-1;
+}
+.yagi-header-img img{
+  width:min(620px,52vw);
+  max-width:none;
+  height:auto;
+  border-radius:0;
+  box-shadow:none;
+  mix-blend-mode:normal;
+  filter:none;
+  transform:translate(4%,10px);
+  display:block;
+}
+
+.yagi-feature-visual{
+  min-height:250px;
+  overflow:visible;
+}
+.yagi-feature-visual::after{
+  width:190px;
+  height:190px;
+  background:radial-gradient(circle,rgba(174,197,153,.18),rgba(174,197,153,.04) 58%,transparent 72%);
+}
+.yagi-feature-visual img{
+  width:auto;
+  max-width:340px;
+  max-height:300px;
+  border-radius:0;
+  box-shadow:none;
+  mix-blend-mode:normal;
+  filter:none;
+}
+.yagi-feature-visual-question img{
+  max-width:310px;
+}
+.yagi-feature-visual-heart img{
+  max-width:330px;
+}
+
+.yagi-assurance{
+  background:linear-gradient(90deg,rgba(248,246,237,.76),rgba(255,255,255,.36));
+  border-radius:26px;
+  border:1px solid rgba(15,76,58,.07);
+}
+.yagi-assurance-visual img{
+  width:auto;
+  max-width:285px;
+  max-height:285px;
+  border-radius:0;
+  box-shadow:none;
+  mix-blend-mode:normal;
+}
+
+.yagi-process-visual{
+  background:linear-gradient(145deg,rgba(248,246,237,.75),rgba(255,255,255,.35));
+  border:1px solid rgba(106,154,112,.12);
+}
+.yagi-process-visual::before{
+  border:0;
+}
+.yagi-process-visual img{
+  width:auto;
+  max-width:280px;
+  max-height:270px;
+  border-radius:0;
+  box-shadow:none;
+  mix-blend-mode:normal;
+}
+
+.yagi-sign-img{
+  width:auto;
+  max-width:250px;
+  max-height:260px;
+  border-radius:0;
+  box-shadow:none;
+  mix-blend-mode:normal;
+  display:block;
+  margin:0 auto 20px;
+}
+
+@media (max-width:900px){
+  .yagi-header{
+    gap:28px;
+    padding:128px 28px 58px;
+  }
+  .yagi-header-text{flex-basis:48%}
+  .yagi-header-img{
+    flex-basis:46%;
+    min-width:300px;
+    min-height:360px;
+  }
+  .yagi-header-img img{
+    width:100%;
+    transform:translate(2%,8px);
+  }
+}
+
+@media (max-width:640px){
+  .yagi-header{
+    padding:118px 22px 42px;
+    gap:8px;
+  }
+  .yagi-header-text{
+    width:100%;
+    flex-basis:auto;
+  }
+  .yagi-header-img{
+    width:100%;
+    min-width:0;
+    min-height:0;
+    flex-basis:auto;
+    justify-content:center;
+    margin-top:-4px;
+  }
+  .yagi-header-img::before{
+    width:310px;
+    height:310px;
+    right:50%;
+    transform:translateX(50%);
+    top:4%;
+  }
+  .yagi-header-img img{
+    width:min(470px,108vw);
+    transform:none;
+  }
+  .yagi-feature-visual img{
+    max-width:280px;
+    max-height:270px;
+  }
+  .yagi-assurance-visual img{
+    max-width:240px;
+    max-height:240px;
+  }
+  .yagi-process-visual img{
+    max-width:240px;
+    max-height:230px;
+  }
+  .yagi-sign-img{
+    max-width:220px;
+    max-height:230px;
+  }
+}
