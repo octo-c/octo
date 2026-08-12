@@ -816,208 +816,31 @@ footer{background:var(--gdk);padding:40px;display:flex;justify-content:space-bet
 }
 
 
-/* Final yagi room layout adjustments */
-.yagi-title{white-space:nowrap !important; word-break:keep-all !important; overflow-wrap:normal !important;}
-.yagi-header{align-items:center !important;gap:clamp(18px,2.8vw,42px) !important;}
-.yagi-header-text{min-width:0 !important;}
-.yagi-header-img{margin-top:0 !important;align-self:center !important;}
-.yagi-header-img img{display:block !important;margin:0 !important;}
-.yagi-feature-text-only{display:block !important;max-width:100% !important;margin:0 auto 54px !important;}
-.yagi-feature-text-only .yagi-feature-copy{width:100% !important;max-width:none !important;}
-.yagi-feature-visual-question img{max-width:320px !important;}
-@media(max-width:640px){
-  .yagi-title{font-size:clamp(28px,8.5vw,43px) !important;white-space:nowrap !important;}
-  .yagi-header{gap:0 !important;}
-  .yagi-header-img{margin-top:-2px !important;}
+/* Final illustration placement adjustments */
+.yagi-assurance-visual img.yagi-illust {
+  width: min(100%, 420px);
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  border-radius: 26px;
+  box-shadow: none;
 }
-
-
-/* =========================================================
-   YAGI ROOM — POLISHED FINAL LAYOUT
-   Clean transparent assets + calmer editorial spacing.
-   ========================================================= */
-.yagi-header{
-  width:100%;
-  max-width:1380px;
-  margin:0 auto;
-  min-height:0;
-  display:grid !important;
-  grid-template-columns:minmax(0,0.92fr) minmax(0,1.08fr) !important;
-  align-items:center !important;
-  justify-content:initial !important;
-  gap:0 !important;
-  padding:145px clamp(28px,4.5vw,64px) 76px !important;
-  overflow:visible !important;
-  background:linear-gradient(115deg,#fbfaf5 0%,#f7f1e7 58%,#efe6d8 100%);
+.yagi-process-visual img.yagi-illust {
+  width: min(100%, 470px);
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  border-radius: 26px;
+  box-shadow: none;
 }
-.yagi-header-text{
-  width:auto !important;
-  max-width:600px !important;
-  padding-right:clamp(0px,1vw,18px);
-  position:relative;
-  z-index:2;
-}
-.yagi-title{
-  white-space:nowrap !important;
-  word-break:keep-all !important;
-  overflow-wrap:normal !important;
-  font-size:clamp(38px,4.2vw,58px) !important;
-  line-height:1.28 !important;
-  letter-spacing:.035em !important;
-  margin-bottom:14px !important;
-}
-.yagi-header-img{
-  width:auto !important;
-  min-width:0 !important;
-  min-height:0 !important;
-  flex:none !important;
-  display:flex !important;
-  align-items:center !important;
-  justify-content:flex-start !important;
-  margin:0 !important;
-  position:relative !important;
-  z-index:1;
-  transform:translateX(-10px);
-}
-.yagi-header-img img{
-  width:min(650px,100%) !important;
-  max-width:650px !important;
-  height:auto !important;
-  max-height:none !important;
-  object-fit:contain !important;
-  transform:none !important;
-  margin:0 !important;
-  display:block !important;
-  border-radius:0 !important;
-  box-shadow:none !important;
-  mix-blend-mode:multiply !important;
-}
-
-/* The former middle goat is intentionally removed; let the copy breathe. */
-.yagi-feature-intro{
-  display:block !important;
-  margin:28px 0 58px !important;
-  padding:0 !important;
-}
-.yagi-feature-intro .yagi-feature-copy{
-  width:100% !important;
-  max-width:980px !important;
-  margin:0 auto !important;
-  padding:0 6px !important;
-}
-.yagi-feature-intro .body-text{
-  max-width:none !important;
-}
-
-.yagi-feature-text-only{
-  margin:0 auto 58px !important;
-  max-width:1000px !important;
-}
-.yagi-feature-copy-emphasis{
-  padding:30px 38px !important;
-  border-left:2px solid rgba(106,154,112,.30) !important;
-  border-radius:0 18px 18px 0 !important;
-  background:rgba(255,255,255,.42) !important;
-}
-
-/* Clean illustration assets: no boxes, no crop, no accidental neighbouring art. */
-.yagi-assurance{
-  grid-template-columns:250px minmax(0,1fr) !important;
-  gap:46px !important;
-  max-width:1040px;
-  margin:18px auto 58px !important;
-  padding:24px 34px !important;
-  border-radius:22px !important;
-  background:rgba(255,255,255,.42) !important;
-}
-.yagi-assurance-visual img{
-  width:230px !important;
-  max-width:230px !important;
-  height:auto !important;
-  max-height:none !important;
-  object-fit:contain !important;
-  border-radius:0 !important;
-  box-shadow:none !important;
-  mix-blend-mode:multiply !important;
-}
-.yagi-process-layout{
-  grid-template-columns:minmax(0,1fr) 300px !important;
-  gap:58px !important;
-  align-items:center !important;
-  max-width:1040px;
-  margin-left:auto !important;
-  margin-right:auto !important;
-}
-.yagi-process-visual{
-  padding:18px 8px 20px !important;
-  background:rgba(255,255,255,.32) !important;
-  border-radius:22px !important;
-  border:1px solid rgba(106,154,112,.10) !important;
-}
-.yagi-process-visual::before{display:none !important}
-.yagi-process-visual img{
-  width:265px !important;
-  max-width:265px !important;
-  height:auto !important;
-  max-height:none !important;
-  object-fit:contain !important;
-  border-radius:0 !important;
-  box-shadow:none !important;
-  mix-blend-mode:multiply !important;
-}
-.yagi-sign-img{
-  width:220px !important;
-  max-width:220px !important;
-  height:auto !important;
-  max-height:none !important;
-  object-fit:contain !important;
-  border-radius:0 !important;
-  box-shadow:none !important;
-  mix-blend-mode:multiply !important;
-}
-
-@media (max-width:900px){
-  .yagi-header{
-    grid-template-columns:minmax(0,1fr) minmax(0,.95fr) !important;
-    padding:130px 28px 60px !important;
+.yagi-assurance-kicker { display: none !important; }
+@media (max-width: 640px) {
+  .yagi-assurance-visual img.yagi-illust,
+  .yagi-process-visual img.yagi-illust {
+    width: min(100%, 420px);
   }
-  .yagi-title{font-size:clamp(34px,5.2vw,48px) !important;}
-  .yagi-header-img{transform:translateX(-4px) !important;}
-}
-@media (max-width:640px){
-  .yagi-header{
-    display:flex !important;
-    flex-direction:column !important;
-    align-items:center !important;
-    gap:0 !important;
-    padding:118px 22px 42px !important;
-    text-align:center !important;
-  }
-  .yagi-header-text{
-    width:100% !important;
-    max-width:none !important;
-    padding:0 !important;
-    text-align:center !important;
-  }
-  .yagi-title{
-    white-space:nowrap !important;
-    font-size:clamp(27px,8.2vw,40px) !important;
-    letter-spacing:0 !important;
-  }
-  .yagi-header-img{
-    width:100% !important;
-    justify-content:center !important;
-    transform:none !important;
-    margin-top:-2px !important;
-  }
-  .yagi-header-img img{width:min(500px,110vw) !important;max-width:500px !important;}
-  .yagi-feature-intro{margin:18px 0 44px !important;}
-  .yagi-feature-intro .yagi-feature-copy{padding:0 !important;}
-  .yagi-feature-copy-emphasis{padding:24px 22px !important;}
-  .yagi-assurance{display:flex !important;flex-direction:column !important;gap:8px !important;padding:22px 18px 26px !important;text-align:center !important;}
-  .yagi-assurance-visual img{width:220px !important;max-width:220px !important;}
-  .yagi-process-layout{display:flex !important;flex-direction:column !important;gap:26px !important;}
-  .yagi-process-visual{width:100% !important;max-width:330px !important;margin:0 auto !important;}
-  .yagi-process-visual img{width:240px !important;max-width:240px !important;}
-  .yagi-sign-img{width:210px !important;max-width:210px !important;}
 }
