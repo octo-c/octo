@@ -844,3 +844,17 @@ footer{background:var(--gdk);padding:40px;display:flex;justify-content:space-bet
     width: min(100%, 420px);
   }
 }
+
+
+/* Keep the CTA phrase together; 「い。」 must not wrap onto its own line. */
+.yagi-cta-phrase {
+  white-space: nowrap;
+  display: inline-block;
+}
+
+@media (max-width: 640px) {
+  .yagi-cta-phrase {
+    font-size: clamp(1.2rem, 5.2vw, 1.65rem);
+    letter-spacing: .04em;
+  }
+}
